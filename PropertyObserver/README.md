@@ -1,0 +1,1 @@
+-- Josh Smith (https://joshsmithonwpf.wordpress.com/2009/07/11/one-way-to-avoid-messy-propertychanged-event-handling/)
