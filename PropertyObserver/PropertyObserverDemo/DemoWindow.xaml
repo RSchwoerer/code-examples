@@ -1,0 +1,12 @@
+﻿<Window 
+    x:Class="PropertyObserverDemo.DemoWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="clr-namespace:PropertyObserverDemo.ViewModels"
+    xmlns:vw="clr-namespace:PropertyObserverDemo.Views"
+    Title="PropertyObserver Demo" 
+    Width="350" Height="500" 
+    WindowStartupLocation="CenterScreen"
+    >
+    <vw:NumberChangeLogView />
+</Window>
