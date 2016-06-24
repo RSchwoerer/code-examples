@@ -1,0 +1,26 @@
+﻿<Window x:Class="RoutedCommandDemo.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:RoutedCommandDemo"
+    Title="Window1" Height="300" Width="300">
+  <!-- 
+  The Window installs a binding so that 
+  it knows when the Foo command executes. 
+  -->
+  <Window.CommandBindings>
+    <CommandBinding
+      Command="{x:Static local:Commands.Foo}"
+      CanExecute="Foo_CanExecute"
+      Executed="Foo_Executed"
+      />
+  </Window.CommandBindings>
+
+  <Grid>
+    <Button 
+      Command="{x:Static local:Commands.Foo}" 
+      Content="Do Foo!"
+      HorizontalAlignment="Center" 
+      VerticalAlignment="Center"
+      />
+  </Grid>
+</Window>
