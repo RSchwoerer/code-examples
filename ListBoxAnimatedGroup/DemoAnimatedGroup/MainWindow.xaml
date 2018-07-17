@@ -1,0 +1,52 @@
+﻿<Window x:Class="DemoAnimatedGroup.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        xmlns:Behaviors="clr-namespace:DemoAnimatedGroup.Behaviors"
+        Title="Animated group demo"
+        Height="235" Width="300"
+        WindowStartupLocation="CenterScreen">
+
+  <Grid>
+
+    <ListBox ItemsSource="{Binding Cities}">
+
+      <i:Interaction.Behaviors>
+        <Behaviors:OverlayGroupingBehavior/>
+      </i:Interaction.Behaviors>
+
+      <ListBox.ItemTemplate>
+        <DataTemplate>
+          <StackPanel Orientation="Horizontal">
+            <TextBlock Text="{Binding Name}" Margin="3"/>
+            <TextBlock Text="{Binding Population}" Margin="3"/>
+          </StackPanel>
+        </DataTemplate>
+      </ListBox.ItemTemplate>
+
+      <ListBox.GroupStyle>
+        <GroupStyle>
+          <GroupStyle.HeaderTemplate>
+            <DataTemplate>
+              <ContentControl HorizontalAlignment="Stretch">
+                <Border Background="Black" >
+
+                  <!-- careful here, Name is a property of the GroupStyle object -->
+                  <TextBlock FontWeight="Bold"
+                             FontSize="15"
+                             Text="{Binding Name}"
+                             VerticalAlignment="Center"
+                             HorizontalAlignment="Left"
+                             TextAlignment="Center"
+                             Foreground="White"/>
+                </Border>
+              </ContentControl>
+            </DataTemplate>
+          </GroupStyle.HeaderTemplate>
+        </GroupStyle>
+      </ListBox.GroupStyle>
+    </ListBox>
+
+  </Grid>
+</Window>
+

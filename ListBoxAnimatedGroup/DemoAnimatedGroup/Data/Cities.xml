@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Cities>
+  <City Country="France" Name="Paris" Population="2138551"/>
+  <City Country="France" Name="Marseille" Population="794811"/>
+  <City Country="France" Name="Toulouse" Population="433055"/>
+  <City Country="France" Name="Nice" Population="338620"/>
+  <City Country="France" Name="Nantes" Population="277269"/>
+  <City Country="France" Name="Strasbourg" Population="274845"/>
+  <City Country="France" Name="Montpellier" Population="248252"/>
+  <City Country="France" Name="Bordeaux" Population="231844"/>
+
+  <City Country="United States" Name="New York City" Population="8008278"/>
+  <City Country="United States" Name="Los Angeles" Population="3694820"/>
+  <City Country="United States" Name="Chicago" Population="2841952"/>
+  <City Country="United States" Name="Houston" Population="2027712"/>
+  <City Country="United States" Name="Philadelphia" Population="1517550"/>
+  <City Country="United States" Name="Phoenix" Population="1321045"/>
+  <City Country="United States" Name="San Antonio" Population="1256810"/>
+  <City Country="United States" Name="San Diego" Population="1223400"/>
+  <City Country="United States" Name="Dallas" Population="1211704"/>
+  <City Country="United States" Name="Detroit" Population="951270"/>
+  <City Country="United States" Name="San Jose" Population="894943"/>
+
+  <City Country="Autralia" Name="Sydney" Population="4394576"/>
+  <City Country="Autralia" Name="Melbourne" Population="3730206"/>
+  <City Country="Autralia" Name="Adelaide" Population="1446704"/>
+  <City Country="Autralia" Name="Adelaide" Population="1074159"/>
+  <City Country="Autralia" Name="Brisbane" Population="958504"/>
+  <City Country="Autralia" Name="Gold Coast" Population="527660"/>
+
+  <City Country="Brazil" Name="Sao Paulo" Population="10021295"/>
+  <City Country="Brazil" Name="Rio de Janeiro" Population="6023699"/>
+  <City Country="Brazil" Name="Salvador" Population="2711840"/>
+  <City Country="Brazil" Name="Fortaleza" Population="2400000"/>
+  <City Country="Brazil" Name="Belo Horizonte" Population="2373224"/>
+  <City Country="Brazil" Name="Brasilia" Population="2207718"/>
+  <City Country="Brazil" Name="Curitiba" Population="1718421"/>
+  <City Country="Brazil" Name="Manaus" Population="1598210"/>
+  <City Country="Brazil" Name="Recife" Population="1478098"/>
+  <City Country="Brazil" Name="Belem" Population="1407737"/>
+  <City Country="Brazil" Name="Porto Alegre" Population="1372741"/>
+  		
+</Cities>
