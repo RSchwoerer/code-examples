@@ -1,0 +1,1 @@
+-- Josh Smith (https://www.codeproject.com/Articles/28959/Introduction-to-Attached-Behaviors-in-WPF)
