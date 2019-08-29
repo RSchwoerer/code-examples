@@ -1,0 +1,55 @@
+﻿<Window x:Class="TabControlStyle.TabControl_1_ColorsOnly"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TabControlRegular" 
+        Height="500" 
+        Width="800">
+   <DockPanel LastChildFill="True">
+      <Grid DockPanel.Dock="Bottom">
+         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+         </Grid.ColumnDefinitions>
+         <TextBlock Text="Zoom:"
+                    VerticalAlignment="Center"
+                    Margin="5"/>
+         <!-- Allows to zoom the TabControl (see the ScaleTransform defined on the TC) -->
+         <Slider x:Name="uiScaleSlider" 
+                 Grid.Column="1"
+                 ToolTip="Drag the slider to change the zoom-level ..."
+                 SmallChange="0.1"
+                 LargeChange="1"
+                 Minimum="1" 
+                 Maximum="10"
+                 Value="2" 
+                 Margin="5"/>
+      </Grid>
+      <TabControl x:Name="tc" Margin="5" SelectedIndex="0"
+                  Background="CadetBlue">
+         <TabControl.LayoutTransform>
+            <!-- Allows to zoom the control's content using the slider -->
+            <ScaleTransform CenterX="0" 
+                         CenterY="0"
+                         ScaleX="{Binding ElementName=uiScaleSlider,Path=Value}"
+                         ScaleY="{Binding ElementName=uiScaleSlider,Path=Value}"/>
+         </TabControl.LayoutTransform>
+         <TabItem Header="Tab 1" Background="CadetBlue">
+            <Canvas Background="AliceBlue"/>
+         </TabItem>
+         <TabItem Header="Tab 2" Background="CadetBlue">
+            <Canvas Background="Lavender"/>
+         </TabItem>
+         <TabItem Header="Tab 3" IsEnabled="False"
+                  ToolTip="I'm disabled.">
+            <Canvas Background="PaleGreen"/>
+         </TabItem>
+         <TabItem Header="Tab 4" Background="CadetBlue">
+            <Canvas Background="Cornsilk"/>
+         </TabItem>
+         <TabItem Header="Tab 5" Background="CadetBlue">
+            <Canvas Background="WhiteSmoke"/>
+         </TabItem>
+      </TabControl>
+   </DockPanel>
+</Window>
+   

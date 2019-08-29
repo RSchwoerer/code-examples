@@ -1,0 +1,26 @@
+﻿<Window x:Class="Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Styling the TabControl"
+        SizeToContent="WidthAndHeight">
+   <Window.Resources>
+      <Style TargetType="{x:Type Button}">
+         <Setter Property="Margin" Value="5,3"/>
+         <Setter Property="Padding" Value="3"/>
+         <Setter Property="HorizontalContentAlignment" Value="Left"/>
+      </Style>
+   </Window.Resources>
+   <StackPanel Margin="5">
+      <Button x:Name="cmd1" Click="cmd1_Click" 
+              Content="1. Base-style (animated, without ScrollViewer)"
+              ToolTip="This shows the TabControl at the end of part one." />
+      <Button x:Name="cmd2" Click="cmd2_Click" 
+              Content="2. Standard ScrollViewer added"/>
+      <Button x:Name="cmd3" Click="cmd3_Click" 
+              Content="3. ScrollViewer with Scroll-Buttons"/>
+      <Button x:Name="cmd4" Click="cmd4_Click" 
+              Content="4. TabItem-menu added"/>
+      <Button x:Name="cmd5" Click="cmd5_Click"
+              Content="5. Custom - ScrollableTabPanel"/>
+   </StackPanel>
+</Window>

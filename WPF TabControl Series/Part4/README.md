@@ -1,0 +1,1 @@
+-- Olaf Rabbachin (https://web.archive.org/web/20160409174733/http://www.blogs.intuidev.com/post/2010/post/2010/01/25/TabControlStyling_PartOne.aspx)
